@@ -118,7 +118,7 @@ const Weather = (props) => {
             </form>
             <div className='mt-5 mb-3 flex flex-col items-center w-72'>
                 {userLocations.length > 0 && <div className='flex flex-wrap items-center border-b border-gray-500'>
-                    <span className='text-gray-400'>Your Locations:</span>   {
+                    <span className='text-gray-400'>Saved:</span>   {
                         userLocations.map((loc, i) => (
                             <span key={i} className='hover:bg-white hover:bg-opacity-20 px-2 py-1 cursor-pointer rounded-lg' onClick={(e) => fetchWeather(e, loc)}>{loc}</span>
 
